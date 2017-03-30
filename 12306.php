@@ -215,7 +215,7 @@ class Huijia{
         $mail->CharSet = 'UTF-8';//设置发送的邮件的编码 可选GB2312 我喜欢utf-8 据说utf8在某些客户端收信下会乱码
         $mail->FromName = '不一样的烟火';//设置发件人姓名（昵称） 任意内容，显示在收件人邮件的发件人邮箱地址前的发件人姓名
         $mail->Username ='340562435';//smtp登录的账号 这里填入字符串格式的qq号即可
-        $mail->Password = 'orzjydlcjguecabg';//smtp登录的密码 使用生成的授权码（就刚才叫你保存的最新的授权码）【非常重要：在网页上登陆邮箱后在设置中去获取此授权码】
+        $mail->Password = '';//smtp登录的密码 使用生成的授权码（就刚才叫你保存的最新的授权码）【非常重要：在网页上登陆邮箱后在设置中去获取此授权码】
         $mail->From = '340562435@qq.com';//设置发件人邮箱地址 这里填入上述提到的“发件人邮箱”
         $mail->isHTML(true);//邮件正文是否为html编码 注意此处是一个方法 不再是属性 true或false
         $mail->addAddress($to);//设置收件人邮箱地址
